@@ -1,5 +1,9 @@
 # Price Update Recalculation (SQL Server) – Pending Orders
 
+## Architecture & Data Flow
+
+![Price Recalculation Flow](docs/price_recalculation_flow.png)
+
 ## Overview
 This project contains a SQL Server stored procedure that **recalculates pending sales orders** when the stored unit price on order lines differs from the **current price list**.
 
