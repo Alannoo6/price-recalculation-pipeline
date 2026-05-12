@@ -44,6 +44,20 @@ This process helps:
 
 ---
 
+## Operational Impact
+
+Representative execution metrics from production environment:
+
+- **Volume processed per run:** [N] pending order lines across [M] order headers in an average execution.
+- **Execution time:** complete recalculation flow runs in approximately [X] seconds for typical batch sizes, suitable for periodic or on-demand triggering.
+- **Pricing discrepancies detected:** historically, [X%] of pending orders showed at least one line with outdated pricing before automation was introduced.
+- **Manual effort eliminated:** estimated [N] hours/week of manual price corrections by the commercial back-office team, fully eliminated after deployment.
+- **Financial impact:** prevention of billing errors that would otherwise translate into [margin leakage / customer disputes / revenue recognition issues].
+
+> *Exact figures have been omitted/altered for confidentiality.*
+
+---
+
 ## Business Problem
 In many ERP environments, sales orders may remain open for days or weeks. During that period, price lists can change, causing discrepancies between:
 - the stored order line unit price and  
