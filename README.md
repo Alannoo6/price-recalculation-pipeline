@@ -46,6 +46,45 @@ This process helps:
 
 ## Operational Impact
 
+Representative operational metrics from the production environment:
+
+- **Volume processed per run:** the stored procedure recalculates **thousands of pending order lines** (typically 1K–10K) in a single execution, covering pricing, taxes and discounts across the affected sales orders.
+- **Execution model:** runs **on-demand**, triggered by the commercial back-office team whenever pricing needs to be synchronized — completing a full recalculation cycle in **a few minutes** per batch.
+- **Manual effort eliminated:** replaced a recurring manual price-correction task that previously consumed **several hours per week** of back-office time, now fully automated and consistent.
+- **Financial integrity:** prevents billing errors caused by outdated pricing on pending orders, ensuring consistency between the commercial pricing policy and the figures that reach invoicing.
+- **Transaction safety:** the procedure is transaction-safe — if any step fails, the batch rolls back cleanly, leaving no partially-updated orders in the system.
+
+> *All figures are representative ranges; specific business identifiers and sensitive data have been anonymized for confidentiality.*
+
+---
+
+## Operational Impact
+
+Representative operational metrics from the production environment:
+
+- **Volume processed per run:** the stored procedure recalculates **thousands of pending order lines** (typically 1K–10K) in a single execution, covering pricing, taxes and discounts across the affected sales orders.
+- **Execution model:** runs **on-demand**, triggered by the commercial back-office team whenever pricing needs to be synchronized — completing a full recalculation cycle in **a few minutes** per batch.
+- **Manual effort eliminated:** replaced a recurring manual price-correction task that previously consumed **several hours per week** of back-office time, now fully automated and consistent.
+- **Financial integrity:** prevents billing errors caused by outdated pricing on pending orders, ensuring consistency between the commercial pricing policy and the figures that reach invoicing.
+- **Transaction safety:** the procedure is transaction-safe — if any step fails, the batch rolls back cleanly, leaving no partially-updated orders in the system.
+
+> *All figures are representative ranges; specific business identifiers and sensitive data have been anonymized for confidentiality.*
+---
+
+## Operational Impact
+
+Representative operational metrics from the production environment:
+
+- **Volume processed per run:** the stored procedure recalculates **thousands of pending order lines** (typically 1K–10K) in a single execution, covering pricing, taxes and discounts across the affected sales orders.
+- **Execution model:** runs **on-demand**, triggered by the commercial back-office team whenever pricing needs to be synchronized — completing a full recalculation cycle in **a few minutes** per batch.
+- **Manual effort eliminated:** replaced a recurring manual price-correction task that previously consumed **several hours per week** of back-office time, now fully automated and consistent.
+- **Financial integrity:** prevents billing errors caused by outdated pricing on pending orders, ensuring consistency between the commercial pricing policy and the figures that reach invoicing.
+- **Transaction safety:** the procedure is transaction-safe — if any step fails, the batch rolls back cleanly, leaving no partially-updated orders in the system.
+
+> *All figures are representative ranges; specific business identifiers and sensitive data have been anonymized for confidentiality.*
+
+## Operational Impact
+
 Representative execution metrics from production environment:
 
 - **Volume processed per run:** [N] pending order lines across [M] order headers in an average execution.
